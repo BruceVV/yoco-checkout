@@ -23,10 +23,10 @@
         if (result.error) {
           alert("Payment failed: " + result.error.message);
         } else {
-          // Return token to FlutterFlow via custom URL
-          window.location.href = `yo://token?value=${result.id}`;
+          window.location.href = `https://your-username.github.io/yoco-checkout/redirect.html?token=${result.id}`;
         }
       }
+
     });
   </script>
 </body>
