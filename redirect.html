@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Processing...</title>
+  <title>Processing Payment</title>
   <script>
     const params = new URLSearchParams(window.location.search);
     const token = params.get('token');
-    window.location.href = 'https://brucevv.github.io/yoco-checkout/token-received?token=' + token;
+
+    // This will be intercepted in FlutterFlow directly
+    window.location.href = 'https://brucevv.github.io/yoco-checkout/redirect.html#token=' + token;
   </script>
 </head>
 <body>
-  <p>Processing payment...</p>
+  <p>Processing your payment...</p>
 </body>
 </html>
