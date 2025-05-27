@@ -8,7 +8,7 @@
 <body>
   <script>
     const yoco = new window.YocoSDK({
-      publicKey: 'pk_test_2a37ffb05EGgMKA55e54' // 🔑 Replace with your YOCO public key
+      publicKey: 'pk_test_2a37ffb05EGgMKA55e54'
     });
 
     const params = new URLSearchParams(window.location.search);
@@ -23,10 +23,9 @@
         if (result.error) {
           alert("Payment failed: " + result.error.message);
         } else {
-          window.location.href = `https://your-username.github.io/yoco-checkout/redirect.html?token=${result.id}`;
+          window.location.href = `redirect.html?token=${result.id}`;
         }
       }
-
     });
   </script>
 </body>
