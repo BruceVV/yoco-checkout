@@ -23,9 +23,11 @@
         if (result.error) {
           alert("Payment failed: " + result.error.message);
         } else {
-          window.location.href = `redirect.html?token=${result.id}`;
+          // ✅ redirect to redirect.html with token as hash fragment
+          window.location.href = `redirect.html#token=${result.id}`;
         }
       }
+
     });
   </script>
 </body>
