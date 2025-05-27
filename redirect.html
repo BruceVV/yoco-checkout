@@ -5,9 +5,7 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     const token = params.get('token');
-
-    // Send token to app (FlutterFlow intercepts this)
-    window.location.href = 'https://your-redirect-page/token-received?token=' + token;
+    window.location.href = 'https://brucevv.github.io/yoco-checkout/token-received?token=' + token;
   </script>
 </head>
 <body>
